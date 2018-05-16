@@ -1,0 +1,31 @@
+README: 
+The following Java programming simply forces command prompt to use Insight Tool Kit executable files. To set up the programming, you need the required ITK build files on your computer and you must also required a Decamino license key, as each key expires in 30 days. You can get a license key by going to the Decamano website and downloading the library, wait a couple minute and the license key will appear in your email. Lastly, if you are using eclipse you will need to import the 2 .jar files by going to project property and click import external jar.
+
+
+
+ExeFileExample.java:
+This programm simply operates on 1 image base on the sliding bar the user sets.
+The output of the operation and then shown on a panel, which user can compare and contrast with the original image.
+
+THIS VARIALB MUST BE SET BY FOR INDIVIDUAL USES:
+1. fileName - path to a dicom image for operation.
+2. filter - name of the ITK algorithm to execute.
+3. output - name of the output file to write to.
+4. ProcessBuild builder - set the required argument based on algorithm of choice.
+optional variables(adjust slider bar maximum and minimum):
+1. slider[i];
+
+
+
+Registration.java:
+This programm is most optimal for ITK algorithm that is time consuming and takes 2 dicom images as inputs.
+1. fileName - path to a dicom image for operation.
+2. filter - name of the ITK algorithm to execute.
+3. inputNotMoving - first input dicom image.
+4. inputMoving - second input dicom image.
+5. ouput - name of the output.
+6. ProcessBuild build - set the required number of arguments base on algorithm of choice
+7. folder - path to folder where list of dicom image is located.
+
+
+
